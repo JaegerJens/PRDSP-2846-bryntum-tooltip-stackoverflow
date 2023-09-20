@@ -5,6 +5,7 @@ import React, { FunctionComponent, useRef } from 'react';
 import { BryntumScheduler } from '@bryntum/schedulerpro-react';
 import { schedulerConfig } from './SchedulerConfig';
 import './App.scss';
+import { tooltipContent } from './tooltip-content';
 
 const App: FunctionComponent = () => {
 
@@ -14,6 +15,11 @@ const App: FunctionComponent = () => {
         <BryntumScheduler
             ref = {scheduler}
             {...schedulerConfig}
+            scheduleTooltipFeature={{
+                mouseOffsetX: -10,
+                mouseOffsetY: -10,
+                generateTipContent: tooltipContent,
+              }}
         />
     );
 };
