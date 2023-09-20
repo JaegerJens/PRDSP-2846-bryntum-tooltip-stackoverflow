@@ -2,7 +2,7 @@
  * Main Application script
  */
 import React, { FunctionComponent, useRef } from 'react';
-import { BryntumScheduler } from '@bryntum/scheduler-react';
+import { BryntumScheduler } from '@bryntum/schedulerpro-react';
 import { schedulerConfig } from './SchedulerConfig';
 import './App.scss';
 

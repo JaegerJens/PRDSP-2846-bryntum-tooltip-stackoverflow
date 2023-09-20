@@ -1,7 +1,7 @@
 /**
  * Application configuration
  */
-import { SchedulerConfig } from '@bryntum/scheduler';
+import { SchedulerConfig } from '@bryntum/schedulerpro';
 
 const schedulerConfig: Partial<SchedulerConfig> = {
 
